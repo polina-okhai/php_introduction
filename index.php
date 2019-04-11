@@ -1,14 +1,43 @@
 <?php
-  $name = 'polina';
-  $polina = 'Okhai';
-  echo $$name;
-  $laptop = 'asus';
-   showMessage();
-  function showMessage() {
+  const LAPTOP = 'asus';
 
-    echo $laptop;
+  $number = 5;
+  $increment_nuber = ++$number;
+  $decrement_number = --$number;
+
+  $a = 10;
+  $b = 12;
+  $a /= $b;
+  $c = $a + $b;
+  $d = $a - $b;
+  $e = $a * $b;
+  $f = $a / $b;
+
+  $first_name = 'Polina';
+  $last_name = 'Okhai';
+  // $full_name = "{$first_name} {$last_name}";
+  $full_name = $first_name . $last_name;  //конкатынация
+  $first_name .= $last_name;
+  echo $first_name;
+  // echo $e;
+  // echo $a ;
+  // echo $increment_nuber ;
+  // echo $decrement_number;
+  $constant_result = getConstant();
+
+  function getConstant() {
+    return LAPTOP;
   }
  ?>
+ <!-- $name = 'polina';
+ $polina = 'Okhai';
+ echo $$name;
+ $laptop = 'asus';
+ showMessage();
+ function showMessage() {
+
+   echo $laptop;
+ } -->
 
  <!-- $products = ['car', 'house', 'tv'];
  $phones = [

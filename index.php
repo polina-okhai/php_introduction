@@ -1,14 +1,24 @@
 <?php
-  $products = ['car', 'house', 'tv'];
-  $phones = [
-    'iphone' => 'Xs',
-    'meizu' => 'M3s'
-  ];
-  $phones['samsung'] = 's9';
-  unset($phones['iphone']);
-  $phones['meizu'] = 'M10';
-  var_dump($phones);
+  $name = 'polina';
+  $polina = 'Okhai';
+  echo $$name;
+  $laptop = 'asus';
+   showMessage();
+  function showMessage() {
+
+    echo $laptop;
+  }
  ?>
+
+ <!-- $products = ['car', 'house', 'tv'];
+ $phones = [
+ 'iphone' => 'Xs',
+ 'meizu' => 'M3s'
+ ];
+ $phones['samsung'] = 's9';
+ unset($phones['iphone']);
+ $phones['meizu'] = 'M10';
+ var_dump($phones); -->
 
  <!-- $street = 'Monitorna';
  $district = "Parus {$street}";   //интерполяция

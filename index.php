@@ -1,26 +1,36 @@
 <?php
-  $a = 10;
-  $b = 10;
-  // var_dump(!$a);
-  if (compareNumbers($a, $b)) {
-    echo 'correct';
-  }
+$name_arry = ['Andrei', 'Polinka', 'Mashunya'];
+$i = 0;
+for ($i; $i<=2; $i++) {
+  echo $name_arry[$i];
+}
+?>
+<!-- $name_arry = ['Andrei', 'Polinka', 'Mashunya'];
+$i = 0;
+for ($i; $i<=2; $i++) {
+  echo $name_arry[$i];
+} -->
 
-  if (compareNumbers($a, $b)) {
-    echo 'correct';
+<!-- $i = 0;
+$a = 0;
+for($i; $i <= 10; $i++) {
+  if ($i%2) {
+    $a += $i;
+  } else {
+    $b += $i;
   }
-  else if (equalNumbers($a, $b)) {
-    echo 'equal';
-  }
-  else {
-    echo 'not correct';
-  }
+}
+echo $a . '->'.$b; -->
 
-  function compareNumbers($a, $b) {
-    return $a > $b;
-  }
+<!-- $i = 0;
+$a = 0;
+for($i; $i <= 10; $i++) {
+$a += $i;
+var_dump($a);
+}
+echo $a; -->
 
-  function equalNumbers($a, $b) {
-    return $a == $b;
-  }
- ?>
+<!-- $i = 0;
+while ($i <= 10) {
+echo $i++;
+} -->
